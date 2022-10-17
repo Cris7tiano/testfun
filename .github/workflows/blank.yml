@@ -16,6 +16,7 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: step1
       run: |
+        curl -sSL https://install.python-poetry.org | python3 -
         poetry shell              # activate a working virtual environment
 
     - name: step2
